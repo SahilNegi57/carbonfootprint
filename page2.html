@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2: Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Carbon Footprint Estimator 🌍</h1>
+
+        <form id="carbon-form">
+            <label for="electricity">
+                Electricity Used (kWh/month): 
+                <span id="electricity-value" class="value-display">0</span> kWh
+            </label>
+            <input type="range" id="electricity" min="0" max="1000" step="10" value="0" required>
+
+            <label for="fuel">
+                Fuel Used (kWh/month - e.g., natural gas): 
+                <span id="fuel-value" class="value-display">0</span> kWh
+            </label>
+            <input type="range" id="fuel" min="0" max="500" step="5" value="0" required>
+
+            <label for="transport">
+                Vehicle Distance (km/month): 
+                <span id="transport-value" class="value-display">0</span> km
+            </label>
+            <input type="range" id="transport" min="0" max="2000" step="20" value="0" required>
+
+            <button type="submit">Calculate Footprint</button>
+        </form>
+
+        <div id="result-area">
+            <h2>Your Estimated Footprint:</h2>
+            <p id="total-emissions">Enter values and click Calculate.</p>
+        </div>
+        
+        <hr>
+        
+        <p>
+            <a href="index.html">&larr; Back to Home</a> | 
+            <a href="page3.html">View More Resources &rarr;</a>
+        </p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
